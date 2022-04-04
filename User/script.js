@@ -46,7 +46,10 @@ for (let index = 0; index < play.length; index++)
         videoP.style.display = 'flex';
     })
 }
-document.getElementById('vide').addEventListener('focusout',()=>{
-    videoP.style.display = 'none';
-    document.getElementById('vide').reset();
+
+videoP.addEventListener('dblclick',()=>{
+
+        document.getElementById('vide').pause();
+        document.getElementById('vide').currentTime=0;
+        videoP.style.display = 'none';
 })
