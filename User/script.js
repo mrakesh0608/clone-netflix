@@ -47,6 +47,10 @@ for (let index = 0; index < play.length; index++)
     })
 }
 
+document.getElementById('vide').addEventListener('mouseleave',()=>{
+    videoP.style.display = 'none';
+    document.getElementById('vide').reset();
+})
 document.getElementById('vide').addEventListener('focusout',()=>{
     videoP.style.display = 'none';
     document.getElementById('vide').reset();
