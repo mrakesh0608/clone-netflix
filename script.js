@@ -7,9 +7,13 @@ for (let index = 0; index < FQ.length; index++)
 {
     FQ[index].addEventListener('click', ()=>{
         closeAllFA();
-        FA[index].style.display = "block";
-        HR[index].style.display = "block";
-        OC[index].innerHTML = "x";
+        
+        if (FA[index].style.display === "none") 
+        {
+            FA[index].style.display = "block";
+            HR[index].style.display = "block";
+            OC[index].innerHTML = "x";
+        }
     })
 }
 
