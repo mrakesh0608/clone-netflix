@@ -6,9 +6,11 @@ let HR = document.getElementsByClassName('hr');
 for (let index = 0; index < FQ.length; index++) 
 {
     FQ[index].addEventListener('click', ()=>{
+        
+        let current = FA[index].style.display;
         closeAllFA();
         
-        if (FA[index].style.display === "none") 
+        if (current === 'none') 
         {
             FA[index].style.display = "block";
             HR[index].style.display = "block";
