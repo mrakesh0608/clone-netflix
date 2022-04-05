@@ -91,9 +91,6 @@ ul{
 }
 @media (max-width:500px)
 {
-    #optform{
-        margin: 25px 20px 50px 20px;
-    }
     .email-text{
         justify-content: center;
     }
@@ -182,6 +179,12 @@ ul{
 }
 @media(max-width:1050px)
 {
+    .FQ span{
+        font-size: 22px;
+    }
+    .FA{
+        font-size: 18px;
+    }
     #FAQ-ul li{
         width: 100%;
     }
